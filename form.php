@@ -12,7 +12,7 @@
     <h1>Censura una parola</h1>
     <p>Inserisci una Bad Word &DownArrow;</p>
 
-    <form action="index.php">
+    <form action="index.php" method="POST">
         <input type="text" name="bad_word" placeholder="Inerisci la parola">
         <input type="submit" value="Invia">
     </form>

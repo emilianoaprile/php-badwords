@@ -13,7 +13,8 @@ var_dump($text);
 var_dump(strlen($text));
 
 // prendo input dal form 
-$censored_word = $_GET['bad_word'];
+$bad_word = $_GET['bad_word'];
+var_dump($bad_word);
 
 ?>
 
@@ -35,6 +36,10 @@ $censored_word = $_GET['bad_word'];
     <!-- stampo la lunghezza -->
     <p><strong>Il testo è lungo:</strong>
         <?php echo strlen($text); ?>
+    </p>
+    <!-- testo con parola censurata -->
+    <p><strong>Testo censurato:</strong>
+        <?php echo str_replace($bad_word, '***', $text); ?>
     </p>
 
 

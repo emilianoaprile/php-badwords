@@ -41,7 +41,10 @@ var_dump($bad_word);
     <p><strong>Testo censurato:</strong>
         <?php echo str_replace($bad_word, '***', $text); ?>
     </p>
-
+    <!-- lunghezza del testo censurato -->
+    <p><strong>Testo censurato:</strong>
+        <?php echo strlen(str_replace($bad_word, '***', $text)); ?>
+    </p>
 
 </body>
 
